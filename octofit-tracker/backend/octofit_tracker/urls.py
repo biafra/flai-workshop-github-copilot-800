@@ -44,6 +44,6 @@ router.register(r'workouts', WorkoutViewSet, basename='workout')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', api_root, name='api-root'),
-    path('api/', api_root, name='api-root'),
+    path('api/', api_root, name='api-root-prefix'),
     path('api/', include(router.urls)),
 ]
